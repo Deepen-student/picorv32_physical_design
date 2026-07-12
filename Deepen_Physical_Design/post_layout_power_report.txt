@@ -1,0 +1,54 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : picorv32
+Version: S-2021.06-SP2
+Date   : Sun Jul 12 23:20:33 2026
+****************************************
+Information: Activity for scenario default was cached, no propagation required. (POW-005)
+Mode: default
+Corner: default
+Scenario: default
+Voltage: 0.75
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Rise-Fall toggles on pin ctmTdsLR_2_1597/Y are impossible given input states; converted to zero toggles. (POW-069)
+Warning: Rise-Fall toggles on pin HFSBUF_99_235/Y are impossible given input states; converted to zero toggles. (POW-069)
+Warning: Rise-Fall toggles on pin ctmTdsLR_1_1303/Y are impossible given input states; converted to zero toggles. (POW-069)
+
+  Cell Internal Power    = 1.22e+09 pW ( 84.3%)
+  Net Switching Power    = 2.27e+08 pW ( 15.7%)
+Total Dynamic Power      = 1.45e+09 pW (100.0%)
+
+Cell Leakage Power       = 3.22e+09 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             1.20e+09               2.17e+08               2.80e+07               1.45e+09    ( 31.0%)         
+register                  1.49e+07               9.78e+05               2.09e+09               2.11e+09    ( 45.1%)         
+sequential               -2.02e+05               2.19e+05               7.73e+07               7.73e+07    (  1.7%)         
+combinational             4.95e+06               8.71e+06               1.02e+09               1.04e+09    ( 22.2%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     1.22e+09 pW            2.27e+08 pW            3.22e+09 pW            4.67e+09 pW
+1
